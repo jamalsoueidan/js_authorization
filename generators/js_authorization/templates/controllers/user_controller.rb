@@ -5,7 +5,7 @@ class UserController < ApplicationController
   end
   
   def login
-    return unless post? 
+    return unless request.post? 
     user = User.authenticate(params[:user][:email], params[:user][:password])
     if user.nil?
       et("user.login.wrong_password")
@@ -24,7 +24,7 @@ class UserController < ApplicationController
   end
   
   def signup
-    return unless post? 
+    return unless request.post? 
     @user = User.new(params[:user])
     if @user.save
       flash_and_redirect(:success => "user.signup.success", :action => :index)
