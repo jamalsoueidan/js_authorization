@@ -10,15 +10,16 @@ Installation
 
 Of course first get the plugin.
 
-1. ruby script/plugin install git://github.com/jamalsoueidan/js_authorization.git
+ruby script/plugin install git://github.com/jamalsoueidan/js_authorization.git
 
-Then we use the js_formbuilder to create the login, signup etc. forms. So get that too.
+Then we use the js_formbuilder and js_extension_package for small things.
 
-2. ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
+ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
+ruby script/plugin install git://github.com/jamalsoueidan/js_extension_package.git
 
 and last generate the files over the your project.
 
-3. ruby script/generate js_authorization
+ruby script/generate js_authorization
 
 
 Finished ;)
