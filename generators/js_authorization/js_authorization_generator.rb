@@ -10,7 +10,7 @@ class JsAuthorizationGenerator < Rails::Generator::Base
       m.file "views/user/login.erb", "app/views/user/login.erb"
       m.file "views/user/signup.erb", "app/views/user/signup.erb"
       m.file "views/user/new_password.erb", "app/views/user/new_password.erb"
-      m.file "views/user/forgot_password.rhtml", "app/views/user/forgot_password.rhtml"
+      m.file "views/user/forgot_password.erb", "app/views/user/forgot_password.erb"
 
       m.migration_template "migrate/create_users.rb", "db/migrate"
 
