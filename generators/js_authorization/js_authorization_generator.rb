@@ -17,4 +17,8 @@ class JsAuthorizationGenerator < Rails::Generator::Base
       m.readme "INSTALL"
     end
   end
+  
+  def file_name  
+    "create_users"
+  end
 end
