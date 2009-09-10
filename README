@@ -1,13 +1,28 @@
 JsAuthorization
 ===============
 
-Introduction goes here.
+Simple authorization plugin.
 
+It handle login, signup, forgot_password and of course new_password.
 
-Example
+Installation
 =======
 
-Example goes here.
+Of course first get the plugin.
+
+1. ruby script/plugin install git://github.com/jamalsoueidan/js_authorization.git
+
+Then we use the js_formbuilder to create the login, signup etc. forms. So get that too.
+
+2. ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
+
+and last generate the files over the your project.
+
+3. ruby script/generate js_authorization
+
+
+Finished ;)
+
 
 
 Copyright (c) 2009 [name of plugin creator], released under the MIT license

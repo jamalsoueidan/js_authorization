@@ -1,1 +1,5 @@
 Installation is finished.
+
+Keep in mind to use this plugin you also need 
+
+ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
