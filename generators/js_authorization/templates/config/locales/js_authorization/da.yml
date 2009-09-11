@@ -16,6 +16,7 @@ da:
         button_signup: "Opret konto"
       signup:
         success: "Du er nu oprettet, check din mail for at aktivere din konto."
+        invalid: "Der opstod fejl under oprettelse af nye konto."
         button_signup: "Opret konto"
         terms_of_service: "Ved at klikke på opret konto, bekræfter du hermed at du har læst og forstået {{url}}"
         terms_of_service_link: betingelserne.

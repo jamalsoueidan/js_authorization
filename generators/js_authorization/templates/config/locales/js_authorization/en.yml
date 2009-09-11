@@ -16,6 +16,7 @@ en:
         button_signup: "Create user"
       signup:
         success: "You are now created, please check your mail to activate your account"
+        invalid: "Their is some errors that occured."
         button_signup: "Create account"
         terms_of_service: "By clicking Sign Up, you are indicating that you have read and agree to the {{url}}"
         terms_of_service_link: Terms of Use and Privacy Policy.

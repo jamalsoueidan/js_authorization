@@ -8,9 +8,9 @@ class UserController < ApplicationController
     return unless request.post? 
     user = User.authenticate(params[:user][:email], params[:user][:password])
     if user.nil?
-      error_flash_and_translate("user.login.wrong_password")
+      error_flash_translate("user.login.wrong_password")
     elsif user.is_not_active?
-      notice_flash_and_translate("user.login.not_active")
+      notice_flash_translate("user.login.not_active")
     else
       session[:user] = user
       current_user = "Lol"
@@ -28,6 +28,8 @@ class UserController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       flash_and_redirect(:success => "user.signup.success", :action => :index)
+    else
+      flash.now[:error] = tt("user.signup.invalid")
     end
   end
   
