@@ -1,3 +1,5 @@
+
+
 Installation is finished.
 
 Keep in mind to use this plugin you also need those two small plugins.
@@ -18,3 +20,8 @@ ActionMailer::Base.sendmail_settings = {
 :location       => '/usr/sbin/sendmail',
 :arguments      => '-i -t'
 }
+
+
+
+IMPORTANT:
+rake db:migrate
