@@ -8,9 +8,9 @@ class UserController < ApplicationController
     return unless request.post? 
     user = User.authenticate(params[:user][:email], params[:user][:password])
     if user.nil?
-      et("user.login.wrong_password")
+      error_flash_and_translate("user.login.wrong_password")
     elsif user.is_not_active?
-      nt("user.login.not_active")
+      notice_flash_and_translate("user.login.not_active")
     else
       session[:user] = user
       current_user = "Lol"
