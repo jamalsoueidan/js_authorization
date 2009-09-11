@@ -1,7 +1,5 @@
-<%= error_messages_for :user %>
-
 <% js_form_for :user, @user, :show_requirements => true do |f| %>
-	<%= f.text_field :email %>
+	<%= f.text_field :email, :show_error_after_field => true %>
 	<%= f.text_field :name %>
 	<%= f.password_field :password %>
 	<%= f.password_field :password_confirmation %>
