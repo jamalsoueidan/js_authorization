@@ -1,7 +1,8 @@
 class JsAuthorizationGenerator < Rails::Generator::Base
   def manifest
     record do |m|
-      m.file "config/initializers/mail.rb", "config/initializers/mail.rb"
+      m.file "config/initializers/js_authorization_mail.rb", "config/initializers/js_authorization_mail.rb"
+      m.file "config/initializers/js_authorization_locale.rb", "config/initializers/js_authorization_locale.rb"
       
       m.file "controllers/user_controller.rb", "app/controllers/user_controller.rb" 
 

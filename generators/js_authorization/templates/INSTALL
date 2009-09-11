@@ -7,7 +7,7 @@ ruby script/plugin install git://github.com/jamalsoueidan/js_extension_package.g
 
 
 Keep in mind to change the mail configurations.
-./config/initializers/mail.rb
+./config/initializers/js_authorization_mail.rb
 
 Default values.
 ActionMailer::Base.default_url_options = { :host => "localhost:3000" } 
