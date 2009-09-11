@@ -1,6 +1,8 @@
 class JsAuthorizationGenerator < Rails::Generator::Base
   def manifest
     record do |m|
+      m.file "config/initializers/mail.rb", "config/initializers/mail.rb"
+      
       m.file "controllers/user_controller.rb", "app/controllers/user_controller.rb" 
 
       m.file "models/user.rb", "app/models/user.rb"
@@ -13,7 +15,7 @@ class JsAuthorizationGenerator < Rails::Generator::Base
       m.file "views/user/forgot_password.erb", "app/views/user/forgot_password.erb"
 
       m.migration_template "migrate/create_users.rb", "db/migrate"
-
+      
       m.readme "INSTALL"
     end
   end
