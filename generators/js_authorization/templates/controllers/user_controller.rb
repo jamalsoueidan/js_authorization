@@ -5,7 +5,7 @@ class UserController < ApplicationController
   end
   
   def login
-    return unless post? 
+    return unless request.post? 
     user = User.authenticate(params[:user][:email], params[:user][:password])
     if user.nil?
       et("user.login.wrong_password")
@@ -24,7 +24,7 @@ class UserController < ApplicationController
   end
   
   def signup
-    return unless post? 
+    return unless request.post? 
     @user = User.new(params[:user])
     if @user.save
       flash_and_redirect(:success => "user.signup.success", :action => :index)
@@ -45,7 +45,7 @@ class UserController < ApplicationController
   end
   
   def forgot_password
-    if post?
+    if request.post?
       if User.request_new_password?(params[:user][:email])
         flash_and_redirect(:success => "user.forgot_password.success", :action => :login)
       else
@@ -78,7 +78,7 @@ class UserController < ApplicationController
   end
   
   def terms_of_service
-    
+    render :text => tt("user.terms_of_service.text")
   end
   
   filter_parameter_logging :password
