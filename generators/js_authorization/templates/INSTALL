@@ -2,7 +2,7 @@ Installation is finished.
 
 Keep in mind to use this plugin you also need those two small plugins.
 
-ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
+ruby script/plugin install git://github.com/jamalsoueidan/js_form_builder.git
 ruby script/plugin install git://github.com/jamalsoueidan/js_extension_package.git
 
 

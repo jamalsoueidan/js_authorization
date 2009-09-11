@@ -8,16 +8,16 @@ It handle login, signup, forgot_password and of course new_password.
 Installation
 =======
 
-Of course first get the plugin.
+First get download the plugin itself.
 
 ruby script/plugin install git://github.com/jamalsoueidan/js_authorization.git
 
-Then we use the js_formbuilder and js_extension_package for small things.
+Then we use the js_form_builder and js_extension_package for small things.
 
-ruby script/plugin install git://github.com/jamalsoueidan/js_formbuilder.git
+ruby script/plugin install git://github.com/jamalsoueidan/js_form_builder.git
 ruby script/plugin install git://github.com/jamalsoueidan/js_extension_package.git
 
-and last generate the files over the your project.
+and last generate the files nessesary to get the plugin to work :)
 
 ruby script/generate js_authorization
 
@@ -26,4 +26,4 @@ Finished ;)
 
 
 
-Copyright (c) 2009 [name of plugin creator], released under the MIT license
+Copyright (c) 2009 Jamal Soueidan, released under the MIT license
